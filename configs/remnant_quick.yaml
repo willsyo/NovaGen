@@ -1,0 +1,39 @@
+scene:
+  phase: remnant_shell
+  grid_size: 72
+  seed: 7
+  physical_extent_ly: 11.0
+  age_years: 340.0
+  shell_radius: 0.62
+  shell_thickness: 0.075
+  asymmetry: 0.17
+  filament_strength: 1.15
+  knot_count: 40
+  synchrotron_strength: 0.24
+  dust_strength: 0.18
+  observational_palette: hubble_like
+  tilt_deg: 22.0
+
+render:
+  image_size: 256
+  frames: 8
+  orbit_degrees: 360
+  backend: auto
+  ray_step_scale: 1.0
+  exposure: 1.45
+  gamma: 2.2
+  bloom_sigma_px: 1.2
+  bloom_strength: 0.06
+  detail_sigma_px: 3.0
+  detail_strength: 0.70
+  background: space
+
+export:
+  output_dir: ~/NovaGen/supernova_visual_pipeline_pkg/outputs/remnant_quick
+  write_npz_cache: true
+  write_vdb_if_available: true
+  write_manifest: true
+  write_png_frames: true
+  write_gif: true
+  gif_fps: 8
+  ue_channel_manifest: true

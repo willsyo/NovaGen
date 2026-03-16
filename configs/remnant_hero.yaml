@@ -1,0 +1,39 @@
+scene:
+  phase: remnant_shell_hero
+  grid_size: 128
+  seed: 42
+  physical_extent_ly: 12.0
+  age_years: 340.0
+  shell_radius: 0.61
+  shell_thickness: 0.055
+  asymmetry: 0.23
+  filament_strength: 1.45
+  knot_count: 120
+  synchrotron_strength: 0.34
+  dust_strength: 0.24
+  observational_palette: hubble_like
+  tilt_deg: 26.0
+
+render:
+  image_size: 512
+  frames: 24
+  orbit_degrees: 360
+  backend: auto
+  ray_step_scale: 1.0
+  exposure: 1.65
+  gamma: 2.2
+  bloom_sigma_px: 1.6
+  bloom_strength: 0.08
+  detail_sigma_px: 3.5
+  detail_strength: 0.75
+  background: space
+
+export:
+  output_dir: ~/NovaGen/supernova_visual_pipeline_pkg/outputs/remnant_hero
+  write_npz_cache: true
+  write_vdb_if_available: true
+  write_manifest: true
+  write_png_frames: true
+  write_gif: true
+  gif_fps: 12
+  ue_channel_manifest: true
